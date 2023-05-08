@@ -42,7 +42,7 @@ function onSubmit(e){
             {iEnsinos.map((iEnsino)=>(<option key={iEnsino.cnpj} value={iEnsino.ie}>{iEnsino.ie}</option>))}
         </select> */}
         <select name='estagiario' onChange={handleChange} value={formValues.estagiario}><option>--</option>
-            {estagiarios.map((estagiario)=>(<option key={estagiario.cpf} value={estagiario.cpf}>{estagiario.cpf}</option>))}
+            {estagiarios.map((estagiario)=>(<option key={estagiario.cpf} value={estagiario.cpf}>{estagiario.nome}</option>))}
         </select>
         <select name='responsavelIE'onChange={handleChange} value={formValues.responsavelIE}><option>--</option>
             {responsaveisIE.map((responsavelIE)=>(<option key={responsavelIE.cpf} value={responsavelIE.cpf}>{responsavelIE.nome}</option>))}
