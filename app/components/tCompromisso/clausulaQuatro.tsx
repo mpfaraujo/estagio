@@ -3,7 +3,7 @@ import { iEnsinoProps } from './interfaces'
 type PageProps= {
   iEnsino:iEnsinoProps
 }
-export default function(props:PageProps) {
+export default function ClausulaQuatro(props:PageProps) {
   const {numSeguro, nomSeguro}=props.iEnsino
     return (
 <>
