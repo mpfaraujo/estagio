@@ -18,7 +18,7 @@ export default function EstagiarioForm() {
   const handleSubmit = async (event:React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/api/cadastros/estagiario', {
+      const response = await fetch('https://estagiocefet.vercel.app/api/cadastros/estagiario', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
