@@ -23,7 +23,7 @@ export default function Formulario() {
     const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       try {
-        const response = await fetch('http://localhost:3000/api/cadastros/ie', {
+        const response = await fetch('https://estagiocefet.vercel.app/api/cadastros/ie', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
