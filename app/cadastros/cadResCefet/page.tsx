@@ -11,6 +11,7 @@ export default function RespCefet() {
     numPortaria: "",
     dataPortaria: "",
   })
+  const router = useRouter()
   const handleInputChange = (event:React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target
     setFormData((prevFormData) => ({
@@ -37,7 +38,7 @@ export default function RespCefet() {
     } catch (error) {
       console.error('Erro ao cadastrar estagiário', error)
     }
-    const router = useRouter()
+   
     router.push('/')
   }
 

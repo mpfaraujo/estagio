@@ -13,7 +13,7 @@ export default function Formulario() {
       nomecurto: "",
       ie: "",
     });
-  
+    const router = useRouter()
     const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {
       setFormData({
         ...formData,
@@ -39,7 +39,7 @@ export default function Formulario() {
       } catch (error) {
         console.error('Erro ao cadastrar Universidade', error);
       }
-      const router = useRouter()
+    
       router.push('/')
     };
   

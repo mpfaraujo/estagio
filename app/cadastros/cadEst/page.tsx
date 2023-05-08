@@ -7,7 +7,7 @@ export default function EstagiarioForm() {
     estagiario:'', identidade:'',nascimento:'',curso:'',periodo:'',telefone:'', celular:'',matricula:'', instEnsino:'', cpf:'',endereco:''
 
   });
-
+  const router = useRouter()
   const handleInputChange = (event:React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({
@@ -34,7 +34,7 @@ export default function EstagiarioForm() {
     } catch (error) {
       console.error('Erro ao cadastrar estagiário', error);
     }
-    const router = useRouter()
+  
     router.push('/')
   };
 

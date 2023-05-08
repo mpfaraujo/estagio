@@ -11,6 +11,7 @@ export default function ResIE() {
     estadoCivil: "",
     cargo: "",
   })
+  const router = useRouter()
   const handleInputChange = (event:React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target
     setFormData((prevFormData) => ({
@@ -37,7 +38,7 @@ export default function ResIE() {
     } catch (error) {
       console.error('Erro ao cadastrar estagiário', error)
     }
-    const router = useRouter()
+   
     router.push('/')
   }
 
