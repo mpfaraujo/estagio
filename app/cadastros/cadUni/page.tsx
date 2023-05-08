@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 export default function Formulario() {
     const [formData, setFormData] = useState({
       endereco: "",
@@ -38,6 +39,8 @@ export default function Formulario() {
       } catch (error) {
         console.error('Erro ao cadastrar Universidade', error);
       }
+      const router = useRouter()
+      router.push('/')
     };
   
     return (

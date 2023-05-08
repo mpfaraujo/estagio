@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 
 export default function RespCefet() {
   const [formData, setFormData] = useState({
@@ -36,6 +37,8 @@ export default function RespCefet() {
     } catch (error) {
       console.error('Erro ao cadastrar estagiário', error)
     }
+    const router = useRouter()
+    router.push('/')
   }
 
 return (

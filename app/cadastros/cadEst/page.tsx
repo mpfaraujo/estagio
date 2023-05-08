@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function EstagiarioForm() {
   const [formData, setFormData] = useState({
@@ -33,6 +34,8 @@ export default function EstagiarioForm() {
     } catch (error) {
       console.error('Erro ao cadastrar estagiário', error);
     }
+    const router = useRouter()
+    router.push('/')
   };
 
   return (
