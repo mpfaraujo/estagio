@@ -1,0 +1,93 @@
+import React from 'react';
+
+function MyComponent({ data }) {
+  return (
+    <div>
+      {data.map((item, index) => (
+        <Link key={index} href={{ pathname: '/child', query: { item: JSON.stringify(item) } }}>
+          {item.name}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+export async function getStaticProps() {
+  const res = await fetch('https://example.com/api/data');
+  const data = await res.json();
+
+  return {
+    props: { data },
+  };
+}
+
+export default MyComponent;
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+import React from 'react';
+import { useRouter } from 'next/router';
+
+function ChildComponent() {
+  const router = useRouter();
+  const { item } = JSON.parse(router.query.item);
+
+  return (
+    <div>
+      {/* Render the selected item here */}
+    </div>
+  );
+}
+
+export default ChildComponent;
+#############################################
+
+USANDO DYNAMIC router
+
+import React from 'react';
+import Link from 'next/link';
+
+function MyComponent({ data }) {
+  return (
+    <div>
+      {data.map((item, index) => (
+        <Link key={index} href={`/child/${encodeURIComponent(JSON.stringify(item))}`}>
+          {item.name}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+export async function getStaticProps() {
+  const res = await fetch('https://example.com/api/data');
+  const data = await res.json();
+
+  return {
+    props: { data },
+  };
+}
+
+export default MyComponent;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In this example, we're using the Link component from Next.js to create a link to a dynamic route with a parameter for the selected item. We're also encoding the selected item as a string and passing it as the parameter.
+
+Next, we'll create a new page for ChildComponent with a dynamic route in pages/child/[item].js. We can retrieve the selected item from the route parameter using the useRouter hook from Next.js:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+import React from 'react';
+import { useRouter } from 'next/router';
+
+function ChildComponent() {
+  const router = useRouter();
+  const { item } = router.query;
+  const selectedItem = JSON.parse(decodeURIComponent(item));
+
+  return (
+    <div>
+      {/* Render the selected item here */}
+    </div>
+  );
+}
+
+export default ChildComponent;

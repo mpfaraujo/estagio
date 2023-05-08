@@ -1,4 +1,5 @@
 import './globals.css'
+import Nav from './nav'
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,8 +12,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="pt-br">
+      <body>
+        <main>
+          <Nav />
+        {children}
+        </main></body>
     </html>
   )
 }

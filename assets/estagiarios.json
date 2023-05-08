@@ -1,0 +1,92 @@
+[
+  {
+    "estagiario": "Tatiana Thays Dávalos Alves",
+    "nascimento": "12/05/1999",
+    "endereco": "Rua Gustavo Augusto de Resende, 402 Fundos, Apartamento 302 - Bairro Portuguesa - Rio de Janeiro",
+    "telefone": "",
+    "celular": "21975556493",
+    "identidade": "279441133",
+    "cpf": "15454677736",
+    "periodo": "11",
+    "matricula": "118067766",
+    "curso": "Licenciatura em Matemática"
+    
+  },
+  {
+    "estagiario": "Brena Vieira Emerick de Carvalho",
+    "nascimento": "30/05/2001",
+    "endereco": "Estrada José Rucas, 832- Penha",
+    "telefone": "",
+    "celular": " (21) 99094-7788",
+    "identidade": " 30702323-4 ",
+    "cpf": "17346166795",
+    "periodo": "7",
+    "matricula": "120030440",
+    "curso": "Licenciatura em Matemática"
+    
+  },
+  {
+    "estagiario": "João Pedro Carvalho da Costa",
+    "nascimento": "18/02/2002",
+    "endereco": "Rua Ivurarema, 174, fundos, Inhaúma",
+    "telefone": "",
+    "celular": " (21) 991309984",
+    "identidade": "29.762.561-8",
+    "cpf": "146.688.097-05",
+    "periodo": "7",
+    "matricula": "120013618",
+    "curso": "Licenciatura em Matemática"
+    
+  },
+  {
+    "estagiario": "Maria Candido Lima de Castro",
+    "nascimento": "29/08/1996",
+    "endereco": "Estrada do Guanumbi, 270 - Freguesia",
+    "telefone": "",
+    "celular": "(21) 987225237",
+    "identidade": "27.526.697-1",
+    "cpf": "146.930.347-70",
+    "periodo": "11",
+    "matricula": "118091757",
+    "curso": "Licenciatura em Matemática"
+    
+  },
+  {
+    "estagiario": "Emanuel de Carlos Ramos Soares",
+    "nascimento": "26/12/1996",
+    "endereco": "Rua Paris, Quadra B, Lote 5 - Jardim Primavera - Duque de Caxias ",
+    "telefone": "",
+    "celular": "21965633603",
+    "identidade": "263309288",
+    "cpf": "15993244747",
+    "periodo": "7",
+    "matricula": "119185915",
+    "curso": "Licenciatura em Matemática"
+    
+  },
+  {
+    "estagiario": "João Carlos Souza da Cruz dos Reis ",
+    "nascimento": "19/03/1997",
+    "endereco": " Rua Francisco Otávio dos Santos, 05, Pilar - Duque de Caxias ",
+    "telefone": "",
+    "celular": "21968382533",
+    "identidade": "284554946",
+    "cpf": "16101109780",
+    "periodo": "16",
+    "matricula": "115021973",
+    "curso": "Licenciatura em Matemática"
+    
+  },
+  {
+    "estagiario": "Alanderson da Silva de Paula",
+    "nascimento": "13/08/1997",
+    "endereco": " Travessa Perauba, 08",
+    "telefone": "",
+    "celular": "(21)989179802",
+    "identidade": "222534703",
+    "cpf": "16062352739",
+    "periodo": "15",
+    "matricula": "116013591",
+    "curso": "Licenciatura em Matemática"
+  }
+]
