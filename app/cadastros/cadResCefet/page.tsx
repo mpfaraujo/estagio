@@ -21,7 +21,7 @@ export default function RespCefet() {
   const handleSubmit = async (event:React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/api/cadastros/respCefet', {
+      const response = await fetch('https://estagiocefet.vercel.app/api/cadastros/respCefet', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
