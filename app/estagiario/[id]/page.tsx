@@ -26,7 +26,7 @@ const getEstagiario=async (id:string)=>{
 
 }
 
-export default async function({params}:{params:{id:string}}) {
+export default async function Est({params}:{params:{id:string}}) {
     const dados:EstagiarioProps  = await getEstagiario(params.id)
     return (
         <div className='p-[6em]'>
