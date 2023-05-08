@@ -21,7 +21,7 @@ export default function ResIE() {
   const handleSubmit = async (event:React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/api/cadastros/respIe', {
+      const response = await fetch('https://estagiocefet.vercel.app/api/cadastros/respIe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
