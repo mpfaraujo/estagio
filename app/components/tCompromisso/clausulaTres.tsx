@@ -2,7 +2,7 @@ export default function ClausulaTres() {
     return (
 <>
 <div className='mx-[4em]'>
-    <h1 className='text-lg mt-6 w-5/6'><b><u>CLÁUSILA TERCEIRA - DAS OBRIGAÇÕES D0 ESTAGIÁRIO</u></b></h1>
+    <h1 className='text-lg mt-6 w-5/6'><b><u>CLÁUSULA TERCEIRA - DAS OBRIGAÇÕES D0 ESTAGIÁRIO</u></b></h1>
 <ol className='text-sm mt-[1em]'>
   <li>Cumprir o horário de estágio, que de comum acordo for estabelecido e que consta do ítem “a” da Cláusula Quarta deste Instrumento, desde que não coincida com seu atual horário escolar.</li>
   <li>Cumprir todas as Normas Internas da <b>CONCEDENTE</b>, como também, toda a programação relativa.</li>
